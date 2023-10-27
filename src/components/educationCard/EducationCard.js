@@ -23,22 +23,22 @@ export default function EducationCard({school}) {
     <div>
       <Fade left duration={1000}>
         <div className="education-card">
-          {school.logo && (
+          {/* {school.logo && (
             <div className="education-card-left">
               <img
                 crossOrigin={"anonymous"}
                 ref={imgRef}
                 className="education-roundedimg"
-                src={school.logo}
+                // src={school.logo}
                 alt={school.schoolName}
               />
             </div>
-          )}
+          )} */}
           <div className="education-card-right">
             <h5 className="education-text-school">{school.schoolName}</h5>
 
             <div className="education-text-details">
-              <h5
+              {/* <h5
                 className={
                   isDark
                     ? "dark-mode education-text-subHeader"
@@ -46,14 +46,14 @@ export default function EducationCard({school}) {
                 }
               >
                 {school.subHeader}
-              </h5>
-              <p
+              </h5> */}
+              {/* <p
                 className={`${
                   isDark ? "dark-mode" : ""
                 } education-text-duration`}
               >
                 {school.duration}
-              </p>
+              </p> */}
               <p className="education-text-desc">{school.desc}</p>
               <div className="education-text-bullets">
                 <ul>

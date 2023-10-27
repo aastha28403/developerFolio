@@ -22,9 +22,9 @@
   font-weight: 400;
 }
 
-.blog-subtitle {
-  text-transform: uppercase;
-}
+// .blog-subtitle {
+//   text-transform: uppercase;
+// }
 .blog-main-div > * {
   flex: 1;
   margin-bottom: 30px;
@@ -38,7 +38,7 @@
 }
 .blog-text-div {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 32px;
 }
 .subTitle {
@@ -57,7 +57,12 @@
     text-align: center;
   }
   .blog-subtitle {
-    font-size: 16px;
+    font-size: 13px;
+    line-height: normal;
+    text-align: center;
+  }
+   .blog-description {
+    font-size: 30px;
     line-height: normal;
     text-align: center;
   }

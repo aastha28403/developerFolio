@@ -48,7 +48,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         />
       </div>
       <div className="experience-text-details">
-        <h5
+        {/* <h5
           className={
             isDark
               ? "experience-text-role dark-mode-text"
@@ -77,7 +77,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         </p>
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
+        </ul> */}
       </div>
     </div>
   );

@@ -7,14 +7,34 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
   const {isDark} = useContext(StyleContext);
+
+  const GetDescBullets = ({descBullets}) => {
+    return descBullets
+      ? descBullets.map((item, i) => (
+          <li key={i} className="subTitle">
+            {item}
+          </li>
+        ))
+      : null;
+  };
+
   if (workExperiences.display) {
     return (
       <div id="experience">
         <Fade bottom duration={1000} distance="20px">
           <div className="experience-container" id="workExperience">
             <div>
-              <h1 className="experience-heading">Experiences</h1>
-              <div className="experience-cards-div">
+              <h1 className="experience-heading">Projects</h1>
+              <h2 className={isDark ? "small-dark small" : "large"}>
+                {workExperiences.description}
+              </h2>
+              <div className="education-text-bullets">
+                <ul>
+                  <GetDescBullets descBullets={workExperiences.descBullets} />
+                </ul>
+              </div>
+
+              {/* <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {
                   return (
                     <ExperienceCard
@@ -30,8 +50,8 @@ export default function WorkExperience() {
                       }}
                     />
                   );
-                })}
-              </div>
+                })} */}
+              {/* </div> */}
             </div>
           </div>
         </Fade>

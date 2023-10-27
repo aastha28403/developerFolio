@@ -21,14 +21,14 @@ export default function AchievementCard({cardInfo, isDark}) {
         ></img>
       </div>
       <div className="certificate-detail-div">
-        <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
+        {/* <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
           {cardInfo.title}
-        </h5>
+        </h5> */}
         <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
           {cardInfo.description}
         </p>
       </div>
-      <div className="certificate-card-footer">
+      {/* <div className="certificate-card-footer">
         {cardInfo.footer.map((v, i) => {
           return (
             <span
@@ -41,8 +41,8 @@ export default function AchievementCard({cardInfo, isDark}) {
               {v.name}
             </span>
           );
-        })}
-      </div>
+        })} */}
+      {/* </div> */}
     </div>
   );
 }
