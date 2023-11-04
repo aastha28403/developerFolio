@@ -4,7 +4,6 @@ import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
 import {illustration, greeting} from "../../portfolio";
@@ -25,7 +24,7 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-                {"Welcome to dsdf"}{" "}
+                {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               <p
@@ -35,20 +34,11 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {
-                  "DSDF Consultancy Services Pvt. Ltd., a leader in the test, monitor, troubleshoot and management of networks. We are a tech-driven company founded in 2022."
-                }
+                {greeting.subTitle}
               </p>
-              <SocialMedia />
+
               <div className="button-greeting-div">
-                <Button text="Contact Us" href="#contact" />
-                {/* {greeting.resumeLink && (
-                  <Button
-                    text="See my resume"
-                    newTab={true}
-                    href={greeting.resumeLink}
-                  />
-                )} */}
+                <Button text="Contact me" href="#contact" />
               </div>
             </div>
           </div>
